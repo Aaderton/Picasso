@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="250dp" />
+
+    <TableLayout
+        android:id="@+id/buttonsTable"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_below="@+id/imageView">
+
+        <TableRow>
+            <Button
+                android:text="Drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDrawable"/>
+            <Button
+                android:text="URL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUrl" />
+            <Button
+                android:text="Placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPlaceholder" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnError" />
+            <Button
+                android:text="Resize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnResize" />
+            <Button
+                android:text="Rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRotate" />
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>
